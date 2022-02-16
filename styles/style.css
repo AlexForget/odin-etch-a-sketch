@@ -17,3 +17,7 @@ body {
   border: 1px solid black;
   height: 25px;
 }
+
+.color {
+  background-color: blue;
+}
