@@ -1,3 +1,19 @@
 body {
-  background-color: rebeccapurple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100px;
+  border: 1px solid black;
+}
+
+.cellule {
+  flex: 1 0 20%;
+  border: 1px solid black;
+  height: 25px;
 }
