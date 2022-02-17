@@ -1,7 +1,9 @@
 /* ----- DÉCLARATION DES VARIABLES ----- */
+var largeurGrille = 800;
+var nbCellule = 20;
 
 /* ----- DÉCLARATIOM DES DOCUMENT QUERY ----- */
-var container = document.querySelector("#container");
+var grille = document.querySelector("#grille");
 
 /* ----- LOADING INITIAL ----- */
 window.onload = (e) => {};
@@ -14,9 +16,13 @@ const mouseOver = (e) => {
 };
 
 // Création de la grille et de l'event listener
-for (let i = 0; i < 16; i++) {
+for (let i = 0; i < nbCellule * nbCellule; i++) {
   const cellule = document.createElement("div");
-  cellule.classList.add("cellule");
+  cellule.setAttribute(
+    "style",
+    `width:${largeurGrille / nbCellule}px; 
+    height:${largeurGrille / nbCellule}px`
+  );
   cellule.addEventListener("mouseover", mouseOver);
-  container.appendChild(cellule);
+  grille.appendChild(cellule);
 }
