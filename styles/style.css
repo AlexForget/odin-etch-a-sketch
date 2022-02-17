@@ -1,8 +1,14 @@
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   align-content: center;
+}
+
+#effacer {
+  padding: 5px 25px;
+  margin: 20px;
 }
 
 #grille {
